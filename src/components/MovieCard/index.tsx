@@ -19,7 +19,7 @@ interface omdbMovieResponse {
 const MovieCard: React.SFC<MovieProps> = ({ movie, close }) => {
   const fetchMovie = async () => {
     const result = await axios.get<omdbMovieResponse>(
-      `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
+      `/.netlify/functions/?i=${movie.imdbID}`
     );
     return result.data;
   };
