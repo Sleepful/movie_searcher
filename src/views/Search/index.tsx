@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Route, useHistory, useLocation } from "react-router-dom";
 import MovieList from "../../components/MovieList";
 
-function App() {
+const Search: React.FunctionComponent = () => {
   const location = useLocation().pathname.slice(1);
   const [searchString, setSearchString] = useState(
     location.replace(/\+/g, " ")
@@ -42,6 +42,6 @@ function App() {
       </Route>
     </>
   );
-}
+};
 
-export default App;
+export default Search;

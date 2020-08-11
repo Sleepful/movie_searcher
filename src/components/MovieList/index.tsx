@@ -6,6 +6,7 @@ import { API_KEY } from "../../config";
 import { usePaginatedQuery } from "react-query";
 import Modal from "../Layout/Modal";
 import MovieCard from "../MovieCard";
+import { Helmet } from "react-helmet";
 
 export interface movieObject {
   Title: string;
@@ -14,9 +15,8 @@ export interface movieObject {
   Type: string;
   Poster: string;
 }
-interface Search {
-  [key: string]: movieObject;
-}
+
+type Search = Array<movieObject>;
 
 interface omdbResponse {
   Search?: Search;
@@ -54,7 +54,7 @@ const MovieList: React.SFC = () => {
   }
 
   const availablePage = (page: number): boolean =>
-    page > 0 && page * 10 - totalResults <= 10;
+    page > 0 && page * 10 - totalResults < 10;
 
   const previousPageDisabled = !availablePage(page - 1);
   const nextPageDisabled = !availablePage(page + 1) || latestData === undefined;
@@ -67,20 +67,28 @@ const MovieList: React.SFC = () => {
 
   const pageInfo = `Results ${page * 10 - 10}-${page * 10} of ${totalResults}`;
 
+  const renderMovieList = (search: Search) =>
+    search.map((movie, index) => (
+      <li
+        className=' text-gray-700 p-2 font-bold cursor-pointer'
+        key={`${movie.imdbID}${index}`}
+        onClick={() => displayModal(movie)}
+      >
+        {movie.Title}
+      </li>
+    ));
+
+  const closeModal = () => setMovie(null);
+
   return (
     (id && search && (
       <>
+        <Helmet>
+          <title>Movie Searcher: {id}</title>
+        </Helmet>
         <main className='my-2 bg-gray-400 mx-2 max-w-lg rounded overflow-hidden shadow-lg p-1 w-full'>
           <ul className='divide-y divide-gray-700 divide-opacity-50'>
-            {Object.keys(search).map((movie, index) => (
-              <li
-                className=' text-gray-700 p-2 font-bold cursor-pointer'
-                key={search[movie].imdbID + index}
-                onClick={() => displayModal(search[movie])}
-              >
-                {search[movie].Title}
-              </li>
-            ))}
+            {renderMovieList(search)}
           </ul>
         </main>
         <section className='flex justify-between max-w-lg w-full flex-wrap'>
@@ -134,7 +142,7 @@ const MovieList: React.SFC = () => {
         </section>
         {movie && (
           <Modal>
-            <MovieCard movie={movie} close={() => setMovie(null)} />
+            <MovieCard movie={movie} close={closeModal} />
           </Modal>
         )}
       </>
