@@ -42,7 +42,7 @@ const MovieCard: React.SFC<MovieProps> = ({ movie, close }) => {
   return (
     <div className='w-screen h-screen flex justify-center items-center'>
       <div
-        className='w-3/4 max-w-xl max-h-1/2 flex flex-no-wrap relative
+        className='w-3/4 max-w-xl max-h-1/2 flex flex-no-wrap relative m-auto
         rounded overflow-hidden shadow-lg bg-gray-300 border-solid border-2 border-gray-600 '
       >
         <img

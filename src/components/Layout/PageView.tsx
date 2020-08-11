@@ -11,9 +11,9 @@ const PageView: React.SFC<PageViewProps> = ({ children }) => {
     <>
       <Helmet>
         <title>Movie Searcher</title>
-        <body className='bg-gray-800 w-screen h-screen flex flex-col justify-center items-stretch' />
+        <body className='bg-gray-800 w-screen h-screen my-auto items-stretch flex' />
       </Helmet>
-      <div className='flex flex-col justify-center items-center p-2'>
+      <div className='flex flex-col justify-center items-center p-2 my-auto'>
         {children}
       </div>
     </>

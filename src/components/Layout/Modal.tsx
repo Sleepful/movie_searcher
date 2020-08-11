@@ -13,7 +13,7 @@ const appRoot = document.getElementById("root");
 const ModalContainer: React.SFC<ModalProps> = ({ children }) => {
   return (
     <div
-      className='absolute transform -translate-x-1/2 -translate-y-1/2'
+      className='fixed transform -translate-x-1/2 -translate-y-1/2'
       style={{ top: "50%", left: "50%" }}
     >
       {children}
