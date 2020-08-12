@@ -10,6 +10,7 @@ Built with:
 * [Jest](https://jestjs.io/) (there's a couple of simple tests to showcase how to do them, run them with `yarn test`)
 * [React Helmet](https://github.com/nfl/react-helmet)
 * [React Query](https://react-query.tanstack.com/) (handles data-fetching cache, very useful for pagination requests and the like!)
+* [React Router](https://reactrouter.com/)
 
 If you want to run this project remember to get an API key from [omdbapi](http://www.omdbapi.com/) and add it to the configuration (`src/config.ts` in `master`)
 
