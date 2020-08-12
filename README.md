@@ -7,7 +7,7 @@ built with:
 * [TailwindCSS](https://tailwindcss.com/)
 * [TypeScript](https://www.typescriptlang.org/)
 * [Create React App](https://create-react-app.dev/)
-* [Jest](https://jestjs.io/) (there's a couple of tests to showcase how to do them, run them with `yarn test`)
+* [Jest](https://jestjs.io/) (there's a couple of simple tests to showcase how to do them, run them with `yarn test`)
 * [React Helmet](https://github.com/nfl/react-helmet)
 * [React Query](https://react-query.tanstack.com/) (handles data-fetching cache, very useful for pagination requests and the like!)
 
