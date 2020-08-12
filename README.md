@@ -1,8 +1,8 @@
 # A little front-end for ["The Open Movie Database"](http://www.omdbapi.com/) *- search for movie titles and info! -*
 
-run with `yarn start`, remember to `yarn install`
+Run with `yarn start`, remember to `yarn install`
 
-built with:
+Built with:
 
 * [TailwindCSS](https://tailwindcss.com/)
 * [TypeScript](https://www.typescriptlang.org/)
