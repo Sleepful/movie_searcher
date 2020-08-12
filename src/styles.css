@@ -9,11 +9,4 @@
   @apply shadow-outline outline-none;
 }
 
-.card {
-}
-
-.card:hover {
-  @apply;
-}
-
 @tailwind utilities;
