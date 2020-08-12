@@ -7,11 +7,11 @@ Built with:
 * [TailwindCSS](https://tailwindcss.com/)
 * [TypeScript](https://www.typescriptlang.org/)
 * [Create React App](https://create-react-app.dev/)
-* [Jest](https://jestjs.io/) (there's a couple of simple tests to showcase how to do them, run them with `yarn test`)
+* [Jest](https://jestjs.io/) There's a couple of simple tests to showcase how to do them, run them with `yarn test`
 * [React Helmet](https://github.com/nfl/react-helmet)
-* [React Query](https://react-query.tanstack.com/) (handles data-fetching cache, very useful for pagination requests and the like!)
+* [React Query](https://react-query.tanstack.com/) Handles data-fetching cache, very useful for pagination requests and the like!
 * [React Router](https://reactrouter.com/)
-* ***Bonus*** Tutorial to watch for changes on Tailwind's `tailwind.config.js` and automatically re-build [Using Tailwind CSS with Create React App](https://daveceddia.com/tailwind-create-react-app/)
+* ***Bonus*** [Using Tailwind CSS with Create React App](https://daveceddia.com/tailwind-create-react-app/) Tutorial to watch for changes on `tailwind.config.js` and automatically re-build
 
 If you want to run this project remember to get an API key from [omdbapi](http://www.omdbapi.com/) and add it to the configuration (`src/config.ts` in `master`)
 
