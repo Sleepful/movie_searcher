@@ -70,11 +70,11 @@ const MovieList: React.SFC = () => {
   const renderMovieList = (search: Search) =>
     search.map((movie, index) => (
       <li
-        className=' text-gray-700 p-2 font-bold cursor-pointer'
+        className=' text-gray-700 p-2 font-bold cursor-pointer flex justify-between'
         key={`${movie.imdbID}${index}`}
         onClick={() => displayModal(movie)}
       >
-        {movie.Title}
+        <span>{movie.Title}</span> <i className='font-normal'> ({movie.Year})</i>
       </li>
     ));
 
