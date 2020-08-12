@@ -1,13 +1,15 @@
-# A little front-end for http://www.omdbapi.com/
+# A little front-end for ["The Open Movie Database"](http://www.omdbapi.com/) *search for movie titles and info!*
 
 run with `yarn start`, remember to `yarn install`
 
 built with:
 
-* TailwindCSS
-* TypeScript
-* Create React App
-* Jest (there's a couple of tests to showcase how to do them, run them with `yarn test`)
+* [TailwindCSS](https://tailwindcss.com/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Create React App](https://create-react-app.dev/)
+* [Jest](https://jestjs.io/) (there's a couple of tests to showcase how to do them, run them with `yarn test`)
+* [React Helmet](https://github.com/nfl/react-helmet)
+* [React Query](https://react-query.tanstack.com/) (handles data-fetching cache, very useful for pagination requests and the like!)
 
 --
 
