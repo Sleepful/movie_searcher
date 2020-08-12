@@ -1,5 +1,4 @@
-# A little front-end for ["The Open Movie Database"](http://www.omdbapi.com/) 
-## *search for movie titles and info!*
+# A little front-end for ["The Open Movie Database"](http://www.omdbapi.com/) *- search for movie titles and info! -*
 
 run with `yarn start`, remember to `yarn install`
 
