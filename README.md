@@ -11,6 +11,8 @@ built with:
 * [React Helmet](https://github.com/nfl/react-helmet)
 * [React Query](https://react-query.tanstack.com/) (handles data-fetching cache, very useful for pagination requests and the like!)
 
+If you want to run this project remember to get an API key from [omdbapi](http://www.omdbapi.com/) and add it to the configuration (`src/config.ts` in `master`)
+
 --
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
