@@ -13,6 +13,8 @@ Built with:
 
 If you want to run this project remember to get an API key from [omdbapi](http://www.omdbapi.com/) and add it to the configuration (`src/config.ts` in `master`)
 
+# A screenshot :O
+
 ![screenshot of program](/public/screenshot.png)
 ---
 
