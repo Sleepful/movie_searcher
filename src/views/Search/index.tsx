@@ -10,7 +10,7 @@ const Search: React.FunctionComponent = () => {
   let history = useHistory();
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
-    history.push(`/${searchString.replace(/\s/, "+")}`);
+    history.push(`/${searchString.replace(/\s/g, "+")}`);
   };
   return (
     <>

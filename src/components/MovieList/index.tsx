@@ -32,11 +32,11 @@ const MovieList: React.SFC = () => {
   const fetchMovies = async () => {
     const result = await axios.get<omdbResponse>(
       `http://www.omdbapi.com/?s=${id.replace(
-        /\s/,
+        /\s/g,
         "+"
-      )}&page=${page}&apikey=${API_KEY}`
-    );
-    return result.data;
+        )}&page=${page}&apikey=${API_KEY}`
+      );
+      return result.data;
   };
 
   const {
