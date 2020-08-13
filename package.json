@@ -24,7 +24,8 @@
     "prebuild": "NODE_ENV=production run-s build:tailwind",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "netlify-lambda install"
   },
   "eslintConfig": {
     "extends": "react-app"
