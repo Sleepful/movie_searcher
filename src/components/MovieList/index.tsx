@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import * as React from "react";
 import { useState } from "react";
 import axios from "axios";
-import { API_KEY } from "../../config";
 import { usePaginatedQuery } from "react-query";
 import Modal from "../Layout/Modal";
 import MovieCard from "../MovieCard";
@@ -31,7 +30,7 @@ const MovieList: React.SFC = () => {
 
   const fetchMovies = async () => {
     const result = await axios.get<omdbResponse>(
-      `/.netlify/functions/?s=${id.replace(/\s/, "+")}&page=${page}`
+      `/.netlify/functions/movie-list?s=${id.replace(/\s/, "+")}&page=${page}`
     );
     return result.data;
   };

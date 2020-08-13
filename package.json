@@ -14,8 +14,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "tailwindcss": "^1.6.2",
-    "typescript": "^3.8",
-    "lambda": "netlify-lambda server src/functions"
+    "typescript": "^3.8"
   },
   "scripts": {
     "build:tailwind": "tailwind build src/styles.css -o src/assets/styles.css",

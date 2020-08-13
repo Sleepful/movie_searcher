@@ -2,7 +2,6 @@ import * as React from "react";
 import { movieObject } from "../MovieList";
 import axios from "axios";
 import { useQuery } from "react-query";
-import { API_KEY } from "../../config";
 
 export interface MovieProps {
   movie: movieObject;
@@ -19,7 +18,7 @@ interface omdbMovieResponse {
 const MovieCard: React.SFC<MovieProps> = ({ movie, close }) => {
   const fetchMovie = async () => {
     const result = await axios.get<omdbMovieResponse>(
-      `/.netlify/functions/?i=${movie.imdbID}`
+      `/.netlify/functions/movie?i=${movie.imdbID}`
     );
     return result.data;
   };
