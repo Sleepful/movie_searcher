@@ -1,6 +1,6 @@
 # A little front-end for ["The Open Movie Database"](http://www.omdbapi.com/) *- search for movie titles and info! -*
 
-It's live at [movie-searcher-site.netlify.app/](https://movie-searcher-site.netlify.app/)
+It's live at [movie-searcher-site.netlify.app](https://movie-searcher-site.netlify.app)
 (The netlify build is in the `netlify` branch of the repository)
 
 Run with `yarn start`, remember to `yarn install`
@@ -20,7 +20,7 @@ If you want to run this project remember to get an API key from [omdbapi](http:/
 
 # Netlify
 
-This project has been deployed to netlify at [movie-searcher-site.netlify.app/](https://movie-searcher-site.netlify.app/), it uses lambda functions for the API calls.
+This project has been deployed to netlify at [movie-searcher-site.netlify.app](https://movie-searcher-site.netlify.app), it uses [Netlify's lambda functions](https://www.netlify.com/products/functions/) for the API calls, they are like AWS lambdas.
 
 # What it looks like
 
