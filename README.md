@@ -1,8 +1,10 @@
-# A little front-end for ["The Open Movie Database"](http://www.omdbapi.com/) 
 
 Online at: [movie-searcher-site.netlify.app](https://movie-searcher-site.netlify.app)
 
 ---
+
+# A little front-end for ["The Open Movie Database"](http://www.omdbapi.com/) 
+
 
 Run with `yarn start`, remember to `yarn install`
 
