@@ -2,6 +2,8 @@
 
 Online at: [movie-searcher-site.netlify.app](https://movie-searcher-site.netlify.app)
 
+---
+
 Run with `yarn start`, remember to `yarn install`
 
 Built with:
