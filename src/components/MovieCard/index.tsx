@@ -47,7 +47,7 @@ const MovieCard: React.SFC<MovieProps> = ({ movie, close }) => {
         <img
           className='object-cover flex-1'
           src={movie.Poster}
-          alt='Sunset in the mountains'
+          alt='Movie poster'
         />
         <div className='px-6 py-4 flex-1 overflow-y-auto'>
           <div className='float-right m-2' />
