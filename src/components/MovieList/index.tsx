@@ -30,7 +30,7 @@ const MovieList: React.SFC = () => {
 
   const fetchMovies = async () => {
     const result = await axios.get<omdbResponse>(
-      `/.netlify/functions/movie-list?s=${id.replace(/\s/, "+")}&page=${page}`
+      `/.netlify/functions/movie-list?s=${id.replace(/\s/g, "+")}&page=${page}`
     );
     return result.data;
   };
