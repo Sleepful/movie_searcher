@@ -22,7 +22,7 @@ If you want to run this project remember to get an API key from [omdbapi](http:/
 
 # Netlify
 
-This project has been deployed to netlify at [movie-searcher-site.netlify.app](https://movie-searcher-site.netlify.app), it uses [Netlify's lambda functions](https://www.netlify.com/products/functions/) for the API calls, they are like AWS lambdas.
+This project has been deployed to netlify at [movie-searcher-site.netlify.app](https://movie-searcher-site.netlify.app), it uses [Netlify's lambda functions](https://www.netlify.com/products/functions/) for the API calls, they are wrappers for AWS lambdas so their API is the same.
 
 You can find the `netlify` build files in the `netlify` branch of this project.
 
